@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.SettingsActivity"
+    tools:showIn="@layout/activity_settings">
+
+    <Button
+        android:id="@+id/imageButtonConnectNerve"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/nerve_button"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20sp"
+        android:drawablePadding="-42sp"
+        android:text="@string/connect_with_nerve_sensor"
+        android:textAlignment="textEnd"
+        android:drawableStart="@drawable/icon_connect"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/imageButtonMedicines"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/nerve_button"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonConnectNerve"
+        android:padding="20sp"
+        android:drawablePadding="-42sp"
+        android:text="@string/manage_medicines"
+        android:textAlignment="textEnd"
+        android:drawableStart="@drawable/icon_pill"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/imageButtonAccount"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/nerve_button"
+        android:drawablePadding="-42sp"
+        android:drawableStart="@drawable/icon_account"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:onClick="settingsOnClickToManage"
+        android:padding="20sp"
+        android:text="@string/manage_nerve_account"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMedicines" />
+
+
+</android.support.constraint.ConstraintLayout>
