@@ -18,27 +18,183 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <LinearLayout
-            android:id="@+id/profile_image"
-            android:layout_width="83dp"
-            android:layout_height="83dp"
-            android:layout_alignParentStart="true"
-            android:layout_above="@id/profile"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/seizure_circle"
-            android:elevation="6dp"
-            android:gravity="center">
+        <TableLayout
+            android:id="@+id/profile_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:background="@drawable/text_view_back"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/needs_help"
+            android:stretchColumns="0,1"
+            android:elevation="4dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:elevation="6dp"
-                android:src="@drawable/image_profile"
-                android:visibility="visible"
-                app:civ_border_color="#F1F1F1"
-                app:civ_border_width="8dp" />
-        </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/profile_epilepsy_type"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/content_epilepsy_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/profile_epilepsy_type"
+                        android:textColor="#000000"
+                        tools:text="@string/profile_epilepsy_type" />
+
+                    <TextView
+                        android:id="@+id/header_epilepsy_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:layout_weight="1"
+                        android:text="Type of Epilepsy"
+                        android:textColor="#BCBCBC"
+                        android:textSize="12sp"
+                        tools:text="Type of Epilepsy:"
+                        tools:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_last_seizure"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/content_last_seizure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/profile_last_seizure"
+                        android:textColor="#000000"
+                        tools:text="@string/profile_last_seizure" />
+
+                    <TextView
+                        android:id="@+id/header_last_seizure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:layout_weight="1"
+                        android:text="Last Seizure: "
+                        android:textColor="#BCBCBC"
+                        android:textSize="12sp"
+                        tools:text="Last Seizure:"
+                        tools:textSize="12sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <!--<TableRow>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/profile_last_seizure"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="5dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/content_last_seizure"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/profile_last_seizure"-->
+            <!--android:textColor="#000000"-->
+            <!--tools:text="@string/profile_last_seizure" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/header_last_seizure"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="-4dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Last Seizure: "-->
+            <!--android:textColor="#BCBCBC"-->
+            <!--android:textSize="12sp"-->
+            <!--tools:text="Last Seizure:"-->
+            <!--tools:textSize="12sp" />-->
+            <!--</LinearLayout>-->
+            <!--</TableRow>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/profile_taken_medicine"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/content_taken_medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/profile_taken_medicine"
+                        android:textColor="#000000"
+                        tools:text="@string/profile_taken_medicine" />
+
+                    <TextView
+                        android:id="@+id/header_taken_medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:layout_weight="1"
+                        android:text="Taken Medicine: "
+                        android:textColor="#BCBCBC"
+                        android:textSize="12sp"
+                        tools:text="Taken Medicine:"
+                        tools:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_last_medicine"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/content_last_medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/profile_last_medicine"
+                        android:textColor="#000000"
+                        tools:text="@string/profile_last_medicine" />
+
+                    <TextView
+                        android:id="@+id/header_last_medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:layout_weight="1"
+                        android:text="Last Medicine: "
+                        android:textColor="#BCBCBC"
+                        android:textSize="12sp"
+                        tools:text="Last Medicine"
+                        tools:textSize="12sp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/seizure_detected_timer"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="26sp" />
 
         <RelativeLayout
             android:id="@+id/seizure_circle"
@@ -103,214 +259,16 @@
                 android:progress="4"
                 android:rotation="270"
                 android:progressDrawable="@drawable/timer_progress_bar" />
-
-            <ProgressBar style="?android:attr/progressBarStyleHorizontal"
-                android:id="@+id/progressBar_yellow"
-                android:layout_width="230dp"
-                android:layout_height="230dp"
-                android:layout_centerInParent="true"
-                android:elevation="4dp"
-                android:onClick="OnClickCancelDetecting"
-                android:indeterminate="false"
-                android:max="15000"
-                android:progress="4"
-                android:rotation="270"
-                android:progressDrawable="@drawable/timer_progress_bar_yellow" />
-
-            <ProgressBar style="?android:attr/progressBarStyleHorizontal"
-                android:id="@+id/progressBar_red"
-                android:layout_width="230dp"
-                android:layout_height="230dp"
-                android:layout_centerInParent="true"
-                android:elevation="4dp"
-                android:onClick="OnClickCancelDetecting"
-                android:indeterminate="false"
-                android:max="15000"
-                android:progress="4"
-                android:rotation="270"
-                android:progressDrawable="@drawable/timer_progress_bar_red" />
-        </RelativeLayout>
-
-        <RelativeLayout android:id="@+id/profile"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_centerHorizontal="true"
-            android:elevation="6dp"
-            android:layout_below="@+id/needs_help"
-            android:gravity="center">
-
-            <TableLayout
-                android:id="@+id/profile_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-4dp"
-                android:background="@drawable/text_view_back"
-                android:paddingBottom="8dp"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp"
-                android:paddingTop="8dp"
-                android:layout_below="@id/profile"
-                android:stretchColumns="0,1"
-                android:elevation="4dp">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:id="@+id/profile_epilepsy_type"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:id="@+id/content_epilepsy_type"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/profile_epilepsy_type"
-                            android:textColor="#000000"
-                            tools:text="@string/profile_epilepsy_type" />
-
-                        <TextView
-                            android:id="@+id/header_epilepsy_type"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-4dp"
-                            android:layout_weight="1"
-                            android:text="Type of Epilepsy"
-                            android:textColor="#BCBCBC"
-                            android:textSize="12sp"
-                            tools:text="Type of Epilepsy:"
-                            tools:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/profile_last_seizure"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:id="@+id/content_last_seizure"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/profile_last_seizure"
-                            android:textColor="#000000"
-                            tools:text="@string/profile_last_seizure" />
-
-                        <TextView
-                            android:id="@+id/header_last_seizure"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-4dp"
-                            android:layout_weight="1"
-                            android:text="Last Seizure: "
-                            android:textColor="#BCBCBC"
-                            android:textSize="12sp"
-                            tools:text="Last Seizure:"
-                            tools:textSize="12sp" />
-                    </LinearLayout>
-                </TableRow>
-
-                <!--<TableRow>-->
-
-                <!--<LinearLayout-->
-                <!--android:id="@+id/profile_last_seizure"-->
-                <!--android:orientation="vertical"-->
-                <!--android:padding="5dp">-->
-
-                <!--<TextView-->
-                <!--android:id="@+id/content_last_seizure"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:text="@string/profile_last_seizure"-->
-                <!--android:textColor="#000000"-->
-                <!--tools:text="@string/profile_last_seizure" />-->
-
-                <!--<TextView-->
-                <!--android:id="@+id/header_last_seizure"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="-4dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:text="Last Seizure: "-->
-                <!--android:textColor="#BCBCBC"-->
-                <!--android:textSize="12sp"-->
-                <!--tools:text="Last Seizure:"-->
-                <!--tools:textSize="12sp" />-->
-                <!--</LinearLayout>-->
-                <!--</TableRow>-->
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:id="@+id/profile_taken_medicine"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:id="@+id/content_taken_medicine"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/profile_taken_medicine"
-                            android:textColor="#000000"
-                            tools:text="@string/profile_taken_medicine" />
-
-                        <TextView
-                            android:id="@+id/header_taken_medicine"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-4dp"
-                            android:layout_weight="1"
-                            android:text="Taken Medicine: "
-                            android:textColor="#BCBCBC"
-                            android:textSize="12sp"
-                            tools:text="Taken Medicine:"
-                            tools:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/profile_last_medicine"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:id="@+id/content_last_medicine"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/profile_last_medicine"
-                            android:textColor="#000000"
-                            tools:text="@string/profile_last_medicine" />
-
-                        <TextView
-                            android:id="@+id/header_last_medicine"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-4dp"
-                            android:layout_weight="1"
-                            android:text="Last Medicine: "
-                            android:textColor="#BCBCBC"
-                            android:textSize="12sp"
-                            tools:text="Last Medicine"
-                            tools:textSize="12sp" />
-                    </LinearLayout>
-                </TableRow>
-            </TableLayout>
         </RelativeLayout>
 
         <TextView
             android:id="@+id/needs_help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/seizure_circle"
+            android:layout_below="@+id/seizure_circle"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="4dp"
             android:background="@drawable/seizure_detected_timer"
+            android:layout_marginTop="2dp"
             android:elevation="6dp"
             android:padding="8dp"
             android:text="@string/needs_help"
