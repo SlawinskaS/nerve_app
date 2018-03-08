@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@drawable/text_view_back"
+            android:fontFamily="@font/roboto_thin"
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="#333333"
@@ -33,9 +34,9 @@
             android:id="@+id/content_home"
             layout="@layout/content_home"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_below="@id/header"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_centerHorizontal="true"/>
 
         <ImageView

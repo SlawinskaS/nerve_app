@@ -17,7 +17,7 @@
 
         <include
             android:id="@+id/header"
-            layout="@layout/header"/>
+            layout="@layout/header_seizure_in_progress"/>
 
         <include
             android:id="@+id/include"

@@ -84,7 +84,7 @@ public class Header extends AppCompatActivity implements SensorEventListener {
             Log.e("x",String.valueOf(event.values[0]));
             Log.e("y",String.valueOf(event.values[1]));
             Log.e("z",String.valueOf(event.values[2]));
-            int sensorChange = 12;
+            int sensorChange = 10;
             if (event.values[0]>sensorChange||event.values[0]<-sensorChange||event.values[1]>sensorChange||event.values[1]<-sensorChange ||event.values[2]>sensorChange||event.values[2]<-sensorChange) {
                 i++;
                 Log.e("ilosc i",String.valueOf(i));

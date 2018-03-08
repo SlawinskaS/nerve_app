@@ -110,6 +110,8 @@
     <string name="connect_with_nerve_sensor">CONNECT WITH <b>NERVE</b> SENSOR</string>
     <string name="manage_nerve_account">MANAGE YOUR <b>NERVE</b> ACCOUNT</string>
     <string name="manage_medicines">MANAGE <b>MEDICINES</b></string>
+    <string name="manage_food">MANAGE <b>FOOD</b></string>
+    <string name="calendar"><b>CALENDAR</b></string>
 
     <string name="add_new_meal">ADD NEW MEAL</string>
     <string name="current_date">01.03.2018</string>

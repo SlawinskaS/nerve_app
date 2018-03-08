@@ -12,11 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:background="@drawable/gradient"        tools:background="@drawable/gradient">
+        android:background="@drawable/gradient"
+        tools:background="@drawable/gradient">
 
         <include
             android:id="@+id/header"
-            layout="@layout/header"/>
+            layout="@layout/header_seizure_detected"/>
 
         <include
             android:id="@+id/include"
