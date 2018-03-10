@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.FoodActivity"
+    tools:showIn="@layout/activity_add_new_pills">
+
+    <Spinner
+        android:id="@+id/pillsSpinner"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/addFood"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Add new Medicine"
+        android:inputType="textPersonName"
+        android:text="Add new Medicine"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pillsSpinner"
+        tools:text="Add new Medicine" />
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="104dp"
+        android:onClick="addNewMeal"
+        android:text="Add medicine"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addFood"
+        app:layout_constraintTop_toBottomOf="@+id/pillsSpinner"
+        tools:text="Add food" />
+
+    <Button
+        android:id="@+id/AcceptFood"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="216dp"
+        android:background="@drawable/transparent_button"
+        android:onClick="SendToCalendarDataOfMeal"
+        android:text="Confirm"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFoodButton"
+        tools:text="Accept medicine" />
+
+    <EditText
+        android:id="@+id/DoseOfMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Dose of medicine"
+        android:inputType="number"
+        android:text="Dose of medicine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFood"
+        tools:text="Dose of medicine" />
+
+    <EditText
+        android:id="@+id/frequencyMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="frequency"
+        android:inputType="number"
+        android:text="frequency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoseOfMedicine"
+        tools:text="frequency" />
+
+</android.support.constraint.ConstraintLayout>

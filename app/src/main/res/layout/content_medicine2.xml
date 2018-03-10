@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/medicineLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.MedicineActivity"
+    tools:showIn="@layout/activity_medicine">
+
+
+    <TextView
+        android:id="@+id/pills_info7"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="360dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="364dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills4"
+        app:layout_constraintStart_toEndOf="@+id/pills_info7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="348dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switchPills1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info1"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="32dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills4"
+        app:layout_constraintStart_toEndOf="@+id/pills_info1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info2"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="76dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="76dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills2"
+        app:layout_constraintStart_toEndOf="@+id/pills_info2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="64dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info3"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="140dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="140dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills3"
+        app:layout_constraintStart_toEndOf="@+id/pills_info3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="124dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info4"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="200dp"
+        android:text="asdasd"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda"
+        android:visibility="visible" />
+
+    <Switch
+        android:id="@+id/switchPills4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="200dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills4"
+        app:layout_constraintStart_toEndOf="@+id/pills_info4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="188dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info5"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="260dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="260dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills4"
+        app:layout_constraintStart_toEndOf="@+id/pills_info5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="244dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+    <TextView
+        android:id="@+id/pills_info6"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="316dp"
+        android:text="asdasd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dasda" />
+
+    <Switch
+        android:id="@+id/switchPills6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="316dp"
+        android:text="Switch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPills4"
+        app:layout_constraintStart_toEndOf="@+id/pills_info6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPills6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:text="Delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Delete" />
+
+
+</android.support.constraint.ConstraintLayout>

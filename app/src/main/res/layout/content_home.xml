@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/text_view_back_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="4dp"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_food_blue"/>
+            <Button
+                android:id="@+id/imageButtonFood"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/transparent_button"
+                android:gravity="center"
+                android:onClick="onClickToFood"
+                android:padding="16dp"
+                android:text="@string/manage_food"
+                android:textAlignment="textEnd"
+                android:textColor="#057492" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/text_view_back_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="4dp"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_medicine_blue"/>
+            <Button android:id="@+id/imageButtonMedicines"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent_button"
+                android:padding="16dp"
+                android:onClick="onClickToMedicine"
+                android:text="@string/manage_medicines"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:textColor="#057492" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/text_view_back_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="4dp"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_calendar_blue"/>
+            <Button android:id="@+id/imageButtonCalendar"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent_button"
+                android:padding="16dp"
+                android:onClick="onClickToCalendar"
+                android:text="@string/calendar"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:textColor="#057492" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/text_view_back_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="4dp"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_profile_blue"/>
+            <Button android:id="@+id/imageButtonProfile"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent_button"
+                android:padding="16dp"
+                android:onClick="onClickToProfile"
+                android:text="@string/connect_with_nerve_sensor"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:textColor="#057492" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/text_view_back_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="4dp"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_settings_blue"/>
+            <Button android:id="@+id/imageButtonSettings"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent_button"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="onClickToSettings"
+                android:text="@string/manage_nerve_account"
+                android:textAlignment="textEnd"
+                android:textColor="#057492" />
+        </RelativeLayout>
+        <!--<com.jjoe64.graphview.GraphView-->
+        <!--android:id="@+id/graph"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />-->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

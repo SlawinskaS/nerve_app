@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/headerView"
+    android:background="@drawable/text_view_back"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:padding="4dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/NerveDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="24dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/text_view_back_vertical"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="data"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/NerveWeekDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/NerveDay"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="data"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

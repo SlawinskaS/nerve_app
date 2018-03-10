@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.ManageAccounts"
+    tools:showIn="@layout/activity_manage_accounts">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Name:" />
+
+    <EditText
+        android:id="@+id/NameManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name_child"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        tools:text="@string/name_child" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/NameManage"
+        app:layout_constraintStart_toStartOf="@+id/NameManage"
+        android:text="Sex"
+        tools:text="Sex:" />
+
+    <RadioGroup
+        android:id="@+id/groupRadioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Male"
+            app:layout_constraintEnd_toStartOf="@+id/Famale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:text="Male" />
+
+        <RadioButton
+            android:id="@+id/Famale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Famale"
+            app:layout_constraintBottom_toTopOf="@+id/ManageWeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SurNameManage"
+            tools:text="Famale" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/groupRadioSex"
+        app:layout_constraintStart_toStartOf="@+id/groupRadioSex"
+        android:text="Weight:" />
+
+    <EditText
+        android:id="@+id/ManageWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/profile_weight"
+        tools:text="@string/profile_weight" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ManageWeight"
+        app:layout_constraintStart_toStartOf="@+id/ManageWeight"
+        android:text="Heigth:"
+        tools:text="Heigth:" />
+
+    <EditText
+        android:id="@+id/ManageHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/profile_height"
+        tools:text="@string/profile_height" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ManageHeight"
+        app:layout_constraintStart_toStartOf="@+id/ManageHeight"
+        android:text="Surname:"
+        tools:text="Surname:" />
+
+    <EditText
+        android:id="@+id/SurNameManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/surname_child"
+        tools:text="@string/surname_child" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/SurNameManage"
+        app:layout_constraintStart_toStartOf="@+id/SurNameManage"
+        android:text="Born:"
+        tools:text="Born:" />
+
+    <EditText
+        android:id="@+id/BornManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/profile_born"
+        tools:text="@string/profile_born" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/BornManage"
+        app:layout_constraintStart_toStartOf="@+id/BornManage"
+        android:padding="6dp"
+        android:onClick="onClickUpdateManage"
+        android:text="Update"
+        tools:text="Update" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:onClick="onClickCancelManage"
+        android:text="Cancel"
+        app:layout_constraintTop_toTopOf="@id/button4"
+        app:layout_constraintStart_toEndOf="@id/button4"
+        tools:text="Cancel" />
+</android.support.constraint.ConstraintLayout>

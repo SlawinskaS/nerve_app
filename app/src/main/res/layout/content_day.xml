@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hacks4snaks.nerve.DayActivity"
+    tools:showIn="@layout/activity_day">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--<Button-->
+                <!--android:id="@+id/button3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Button"-->
+                <!--tools:ignore="UnknownId"-->
+                <!--android:visibility="invisible"-->
+                <!--tools:layout_editor_absoluteX="283dp"-->
+                <!--tools:layout_editor_absoluteY="0dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/mealInDate"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="26dp"-->
+                <!--android:layout_marginStart="16dp"-->
+                <!--android:text="TextView"-->
+                <!--android:visibility="invisible"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="216dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/daySeizure"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="16dp"-->
+                <!--android:text="TextView"-->
+                <!--android:visibility="invisible"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="16dp" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

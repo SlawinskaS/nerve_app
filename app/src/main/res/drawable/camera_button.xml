@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="false">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+        <solid android:color="#CC0033" />
+        <stroke android:color="#a8a8a8" android:width="2dp" />
+        <set xmlns:android="http://schemas.android.com/apk/res/android">
+            <alpha android:fromAlpha="0.5"
+                android:toAlpha="1.0"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:duration="500"
+                android:repeatMode="reverse"
+                android:repeatCount="infinite"/>
+        </set>
+    </shape>
+</item>
+<item android:state_pressed="true">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+        <solid android:color="#CC0033" />
+        <stroke android:color="#a8a8a8" android:width="2dp" />
+    </shape>
+</item>
+</selector>

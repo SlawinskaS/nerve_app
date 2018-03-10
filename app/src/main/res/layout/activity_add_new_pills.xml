@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.hacks4snaks.nerve.AddNewPills">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient"
+        tools:background="@drawable/gradient">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_food"/>
+
+        <include
+            android:id="@+id/content_food"
+            layout="@layout/content_add_new_pills"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/header"
+            android:layout_marginTop="4dp"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_food" >
+
+            <include
+                android:id="@+id/footer"
+                layout="@layout/footer"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
